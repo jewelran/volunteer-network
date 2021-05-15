@@ -9,7 +9,7 @@ const AddEvent = () => {
         name: data.name,
         imagesURL : imageURL
       }
-      const url = 'http://localhost:5055/addEvent'
+      const url = 'https://agile-headland-42740.herokuapp.com/addEvent'
       console.log(eventData)
       fetch(url, {
         method: "POST",
@@ -25,7 +25,7 @@ const AddEvent = () => {
 
 
     const handleImagesUpload = event => {
-            console.log(event.target.files[0]); 
+            // console.log(event.target.files[0]); 
 
            const imgData = new FormData();
            imgData.set('key', '941644256336912a1409c0bcfce50071');
